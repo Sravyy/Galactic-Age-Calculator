@@ -9,26 +9,28 @@ convertAgeToSeconds() {
     //Converting given bodInput to seconds
 
   let currentDate = new Date();
-  return yearToSeconds = parseInt(currentDate.setTime(this.dob.getTime())/1000); //divide by 1000 as the getTime returns milliseconds
+  return parseInt(currentDate.setTime(this.dob.getTime())/1000); //divide by 1000 as the getTime returns milliseconds
 }
 
 ageInYears() {
   //converting age in yearToSeconds
 
-  let age = parseInt(this.ConvertAgeToSeconds()/secondsInOneYear);
+  let age = parseInt(this.convertAgeToSeconds()/this.secondsInOneYear);
   return age;
 }
 
 lifeExpOnEarth(){
   //caliculating life expectancy on earth
 
-  let lifeExpOnEarth = this.lifeExpectancy - this.ageInYears();
+  let lifeExpOnEarth = parseInt(this.lifeExpectancy - this.ageInYears());
   return lifeExpOnEarth;
 }
 
 ageOnMercury(){
+
   let mercuryAge = parseInt(this.ageInYears()/0.24);
   return mercuryAge;
+
 }
 ageOnVenus(){
   let venusAge = parseInt(this.ageInYears()/0.62);
@@ -45,19 +47,19 @@ ageOnJupiter(){
 
 
 
-lifeExpectancyOnMercury(){
-  let lifeExpOnMercury = parseInt(this.lifeExpOnEarth()/.24);
+yearsOnMercury(){
+  let lifeExpOnMercury = parseInt(this.lifeExpOnEarth()/0.24);
   return lifeExpOnMercury;
 }
-lifeExpectancyOnVenus(){
-  let lifeExpOnVenus = parseInt(this.lifeExpOnEarth()/.62);
+yearsOnVenus(){
+  let lifeExpOnVenus = parseInt(this.lifeExpOnEarth()/0.62);
   return lifeExpOnVenus;
 }
-lifeExpectancyOnMars(){
+yearsOnMars(){
   let lifeExpOnMars = parseInt(this.lifeExpOnEarth()/1.88);
   return lifeExpOnMars;
 }
-lifeExpectancyOnVenus(){
+yearsOnJupiter(){
   let lifeExpOnJupiter = parseInt(this.lifeExpOnEarth()/11.86);
   return lifeExpOnJupiter;
 }
