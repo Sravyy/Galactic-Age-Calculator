@@ -20,5 +20,6 @@ $(document).ready(function() {
     $('#marsLife').text(calculator.yearsOnMars());
     $('#jupiterLife').text(calculator.yearsOnJupiter());
 
+
   });
 });

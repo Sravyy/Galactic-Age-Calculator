@@ -7,9 +7,9 @@ constructor (dob) {
 
 convertAgeToSeconds() {
     //Converting given bodInput to seconds
-  let dob = new Date();
+  // let dob = new Date();
   let currentDate = new Date();
-  return parseInt(currentDate.setTime(dob.getTime())/1000); //divide by 1000 as the getTime returns milliseconds
+  return parseInt(currentDate.setTime(this.dob.getTime())/1000); //divide by 1000 as the getTime returns milliseconds
 }
 
 ageInYears() {

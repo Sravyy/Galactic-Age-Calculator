@@ -22,9 +22,9 @@ var AgeCalculator = exports.AgeCalculator = function () {
     key: "convertAgeToSeconds",
     value: function convertAgeToSeconds() {
       //Converting given bodInput to seconds
-      var dob = new Date();
+      // let dob = new Date();
       var currentDate = new Date();
-      return parseInt(currentDate.setTime(dob.getTime()) / 1000); //divide by 1000 as the getTime returns milliseconds
+      return parseInt(currentDate.setTime(this.dob.getTime()) / 1000); //divide by 1000 as the getTime returns milliseconds
     }
   }, {
     key: "ageInYears",
