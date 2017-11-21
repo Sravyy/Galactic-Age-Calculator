@@ -7,6 +7,7 @@ $(document).ready(function() {
     let calculator = new AgeCalculator(dob);
 
     $("#output").show();
+
     $('#age-in-seconds').text(calculator.convertAgeToSeconds());
 
     $('#mercury').text(calculator.ageOnMercury());

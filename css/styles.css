@@ -1,0 +1,44 @@
+#cover{
+  background-image:
+  linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+  url("http://www.alienvirals.com/wp-content/uploads/2017/08/0846151b6283fe21b140a55c2dc72de1.jpeg");
+  background-position: fixed;
+  background-attachment: fixed;
+  height : 450px;
+}
+
+h1 {
+height: 150px;
+font-size: 100px;
+text-align: center;
+font-weight: bold;
+margin-top: 20px;
+color: #f7f5e8;
+text-shadow: 3px 3px grey;
+}
+
+label{
+  font-size: 17px;
+  font-weight: bold;
+  color: #99efe9;
+}
+h2{
+  font-size: 30px;
+  color: #f7f5e8;
+  font-weight: bold;
+}
+h3{
+  font-size: 30px;
+  color : #3b7def;
+  font-weight: bold;
+}
+
+.btn {
+  margin-bottom: 40px;
+  width: 100px;
+  font-size: 15px;
+}
+
+img{
+  margin-left: 35%;
+}

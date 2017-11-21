@@ -14,17 +14,17 @@ var AgeCalculator = exports.AgeCalculator = function () {
     _classCallCheck(this, AgeCalculator);
 
     this.secondsInOneYear = 31536000; // 60 * 60 * 24 * 365
-    this.dob = dob; // Date object
-    this.lifeExpectancy = Math.random() * (82 - 76) + 76; //life expectancy between the ages of 76 and 81 in earth years
+    this.dob = dob; // Date of birth
+    this.lifeExpectancy = 80; //life expectancy between the ages of 76 and 81 in earth years
   }
 
   _createClass(AgeCalculator, [{
     key: "convertAgeToSeconds",
     value: function convertAgeToSeconds() {
       //Converting given bodInput to seconds
-
+      var dob = new Date();
       var currentDate = new Date();
-      return parseInt(currentDate.setTime(this.dob.getTime()) / 1000); //divide by 1000 as the getTime returns milliseconds
+      return parseInt(currentDate.setTime(dob.getTime()) / 1000); //divide by 1000 as the getTime returns milliseconds
     }
   }, {
     key: "ageInYears",
@@ -123,6 +123,7 @@ $(document).ready(function () {
         var calculator = new _AgeCalculator.AgeCalculator(dob);
 
         $("#output").show();
+
         $('#age-in-seconds').text(calculator.convertAgeToSeconds());
 
         $('#mercury').text(calculator.ageOnMercury());
